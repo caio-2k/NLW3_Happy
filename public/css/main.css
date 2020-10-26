@@ -1,0 +1,32 @@
+/* Regra CSS - Definição (seletor, chave, valor) */
+/* Cascading: Superioridade e especificidade de elementos (id, class, etc) 
+id mais especifico de todos, último elemento como o principal (body duplicado)*/
+
+*{
+  /* Removendo margens */
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  /* Ocupando toda a tela */
+  height: 100vh;
+  color: white;
+  /* em: busca no elemento anterior (pai, no body por exemplo, é o html) e faz um calculo para o tamanho
+  rem: rem, root elemento, busca no elemento root e faz os calculos */
+}
+
+:root{
+  /* Equivale a 10px */
+  font-size: 62.5%;
+}
+
+body, input, button, textarea{
+  /* 18px calculado com o elemento root */
+  font-size: 1.8rem;
+  line-height: 1;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  /* ou */
+  /* font: 400, 18px/1 'Nunito', sans-serif; */
+}

@@ -1,0 +1,82 @@
+
+#page-landing{
+  /* Background com gradiente passando os dados da cor e a opacidade de cada uma */
+  background: linear-gradient(329.54deg, #29b6d1 0%, #00c7c7 100%);
+  text-align: center;
+  /* No minimo 100vh mas se vier a passar, não tem problema */
+  min-height: 100vh; 
+  /* Aplicando display: flex na caixa container e fazendo os elementos filhos
+  ficarem um ao lado do outro */
+  display: flex; 
+  /* align-items: center; */
+
+  /* display-flex: regra dentro de uma caixa geral onde todos os elementos filhos
+  irão assumir o display flex, ou seja, um ao lado do outro   */
+}
+
+/* Centralizando elementos ao centro da tela */
+#container{
+  /* Só vai conseguir alinhar em cima e embaixo se o elemento anterior for display: flex */
+  margin: auto;
+  width: 90%;
+}
+
+.location, h1, .visit p {
+  height: 16vh;
+}
+
+.location{
+  margin-left: 7rem;
+}
+
+.visit a{
+  width: 8rem;
+  height: 8rem;
+  background: #ffd666;
+  border: none;
+  border-radius: 3rem;
+  display: flex;
+  
+  /* Alinhamento de cima pra baixo */
+  align-items: center;
+  
+  /* Alinha aos lados (eixo x) */
+  justify-content: center;
+
+  /* Centralizando  */
+  margin: auto;
+
+  outline: none;
+
+  transition: background 200ms;
+}
+
+.visit a:hover{
+  background: #96feff;
+}
+
+#city{
+  color: #FFD666;
+  font-weight: 700;
+}
+
+/* Tempo diferente de aparição para cada elemento */
+#logo{
+  animation-delay: 50ms;
+}
+
+.location{
+  animation-delay: 100ms;
+}
+
+main h1{
+  animation-delay: 150ms;
+}
+
+.visit p{
+  animation-delay: 200ms;
+}
+
+.visit a{
+  animation-delay: 250ms;
+}

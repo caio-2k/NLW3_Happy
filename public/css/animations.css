@@ -1,0 +1,25 @@
+
+/* animações */
+@keyframes up {
+  /* start animation */
+  from{
+    opacity: 0;
+    /* aparecendo de baixo para cima (eixo y) */
+    transform: translateY(16px);
+  }
+
+  /* end animation */
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* creating class from the keyframe */
+
+.animate-up{
+  animation-name: up;
+  animation-duration: 300ms;
+  /* Assim que ele fizer a animação from-to ele para nas ultimas props */
+  animation-fill-mode: backwards;
+}
